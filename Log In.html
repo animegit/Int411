@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="Log In.css" rel="stylesheet" type="text/css">
+ <title>Log In</title>
+</head>
+<body bgcolor="black" style="color:white;">
+ <form style="border:1px solid #ccc">
+ <div class="container">
+ <h1 style="text-align:center;">Log In</h1>
+ <p>Please sign in to your account:</p>
+ <hr>
+ <label for="email"><b>Email</b></label><br>
+ <input type="email" placeholder="Enter Email" name="email" required><br>
+ <label for="psw"><b>Password</b></label><br>
+ <input type="password" placeholder="Enter Password" name="psw" required><br>
+ <label>
+ <input type="checkbox" checked="checked" name="remember" style="margin bottom:15px"> Remember me
+ </label>
+ <div class="clearfix">
+    <button type="button" class="signupbtn" onclick="redirectToTicketsPage()">Log In</button>
+    <button type="button" class="cancelbtn" onclick="redirectToCancelPage()">Cancel</button>
+ </div>
+ </div>
+ </form>
+ 
+ <script>
+   function redirectToTicketsPage() {
+     window.location.href = "code.html";
+   }
+
+   function redirectToCancelPage() {
+     window.location.href = "cancel.html";
+   }
+ </script>
+</body>
+</html>

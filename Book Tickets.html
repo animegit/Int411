@@ -1,0 +1,49 @@
+<!doctype html> 
+<head> 
+ <link href="Book Tickets.css" rel="stylesheet" type="text/css"> 
+ <title>Book Tickets</title> 
+ <script type="text/javascript"> 
+ function showAlert() 
+ { 
+ alert("Please fill in this form to book tickets:"); 
+ } 
+ </script> 
+ <script type="text/javascript"> 
+ var n; 
+ n=prompt("Please enter your name", "Name"); 
+ document.writeln("Hello "+n+"! Please select the venue, date and time. Thank you!");  </script>
+</head> 
+<body> 
+ <body bgcolor="black"> 
+ <body style="color:white;"> 
+ <body onload="showAlert()"> 
+ <form style="border:1px solid #ccc"> 
+ <div class="container"> 
+ <h1 style="text-align:center;">Book Tickets</h1>  <hr> 
+ <label for="venue"><b>Venue</b></label><br>  <input list="venues"> 
+ <datalist id="venues"> 
+ <option>Theatre 1</option> 
+ <option>Theatre 2</option> 
+ <option>Theatre 3</option> 
+ </datalist> 
+ <br><br> 
+ <label for="Shows"><b>Shows</b></label><br>  <input list="Shows"> 
+ <datalist id="Shows"> 
+ <option>Vir Das:WANTED</option> 
+ <option>Kenny Sebastian:Sketchy Behaviour</option>  <option>Aravind Sa:We Need To Talk</option>  <option>Sumukhi Suresh:Dont tell Amma</option>  </datalist> 
+ <br><br> 
+ <label for="dt"><b>Date and Time</b></label><br>  <input type="date" name="dt"><br><br> 
+ <label for="no"><b>Number of Tickets</b></label><br> 
+ <input type="number" name="no"><br><br>  
+ <button onclick="c()">Submit</button><br><br> 
+ <script type="text/javascript"> 
+ function c() 
+ { 
+ confirm("Proceed?"); 
+ } 
+  
+ </script> 
+ <input type="reset"><br><br> 
+ </form> 
+</body> 
+</html> 
